@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Justson.AgentWeb:agentweb-core:v5.0.6-androidx@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/111e070e30c57365803aeca71b3c0bfa/transformed/jetified-agentweb-core-v5.0.6-androidx/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/111e070e30c57365803aeca71b3c0bfa/transformed/jetified-agentweb-core-v5.0.6-androidx/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/111e070e30c57365803aeca71b3c0bfa/transformed/jetified-agentweb-core-v5.0.6-androidx/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Justson.AgentWeb/agentweb-core/v5.0.6-androidx/16371dfd80a5fdc101bd2a92306f91915a087475/agentweb-core-v5.0.6-androidx-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

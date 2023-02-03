@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.greenrobot:eventbus:3.3.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2a59c3aa3087f08888d50b31fa6d66b2/transformed/jetified-eventbus-3.3.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2a59c3aa3087f08888d50b31fa6d66b2/transformed/jetified-eventbus-3.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2a59c3aa3087f08888d50b31fa6d66b2/transformed/jetified-eventbus-3.3.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.greenrobot/eventbus/3.3.1/deead784f28f0de3003c65ebc22f079106bcef26/eventbus-3.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

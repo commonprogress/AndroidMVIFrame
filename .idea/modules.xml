@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndroidMVIFrame.iml" filepath="$PROJECT_DIR$/.idea/modules/AndroidMVIFrame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidMVIFrame.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidMVIFrame.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidMVIFrame.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidMVIFrame.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidMVIFrame.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidMVIFrame.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidMVIFrame.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidMVIFrame.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/AndroidMVIFrame.libs.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/AndroidMVIFrame.libs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/lib_base/AndroidMVIFrame.libs.lib_base.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/lib_base/AndroidMVIFrame.libs.lib_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/lib_base/AndroidMVIFrame.libs.lib_base.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/lib_base/AndroidMVIFrame.libs.lib_base.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/lib_base/AndroidMVIFrame.libs.lib_base.main.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/lib_base/AndroidMVIFrame.libs.lib_base.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/lib_base/AndroidMVIFrame.libs.lib_base.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/lib_base/AndroidMVIFrame.libs.lib_base.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/lib_common/AndroidMVIFrame.libs.lib_common.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/lib_common/AndroidMVIFrame.libs.lib_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/lib_common/AndroidMVIFrame.libs.lib_common.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/lib_common/AndroidMVIFrame.libs.lib_common.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/lib_common/AndroidMVIFrame.libs.lib_common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/lib_common/AndroidMVIFrame.libs.lib_common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/lib_common/AndroidMVIFrame.libs.lib_common.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/lib_common/AndroidMVIFrame.libs.lib_common.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_home/AndroidMVIFrame.module_home.iml" filepath="$PROJECT_DIR$/.idea/modules/module_home/AndroidMVIFrame.module_home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_home/AndroidMVIFrame.module_home.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/module_home/AndroidMVIFrame.module_home.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_home/AndroidMVIFrame.module_home.main.iml" filepath="$PROJECT_DIR$/.idea/modules/module_home/AndroidMVIFrame.module_home.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_home/AndroidMVIFrame.module_home.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/module_home/AndroidMVIFrame.module_home.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_login/AndroidMVIFrame.module_login.iml" filepath="$PROJECT_DIR$/.idea/modules/module_login/AndroidMVIFrame.module_login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_login/AndroidMVIFrame.module_login.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/module_login/AndroidMVIFrame.module_login.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_login/AndroidMVIFrame.module_login.main.iml" filepath="$PROJECT_DIR$/.idea/modules/module_login/AndroidMVIFrame.module_login.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_login/AndroidMVIFrame.module_login.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/module_login/AndroidMVIFrame.module_login.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_user/AndroidMVIFrame.module_user.iml" filepath="$PROJECT_DIR$/.idea/modules/module_user/AndroidMVIFrame.module_user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_user/AndroidMVIFrame.module_user.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/module_user/AndroidMVIFrame.module_user.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_user/AndroidMVIFrame.module_user.main.iml" filepath="$PROJECT_DIR$/.idea/modules/module_user/AndroidMVIFrame.module_user.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_user/AndroidMVIFrame.module_user.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/module_user/AndroidMVIFrame.module_user.unitTest.iml" />
+    </modules>
+  </component>
+</project>

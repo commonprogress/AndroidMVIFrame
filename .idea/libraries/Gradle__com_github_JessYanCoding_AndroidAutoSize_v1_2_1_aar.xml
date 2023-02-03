@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.JessYanCoding:AndroidAutoSize:v1.2.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b7110e4a8f406a2d5ee21bcd8937c163/transformed/jetified-AndroidAutoSize-v1.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b7110e4a8f406a2d5ee21bcd8937c163/transformed/jetified-AndroidAutoSize-v1.2.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b7110e4a8f406a2d5ee21bcd8937c163/transformed/jetified-AndroidAutoSize-v1.2.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.JessYanCoding/AndroidAutoSize/v1.2.1/8e193a06baa1d44314ab62dc83ba505d7c3c9d16/AndroidAutoSize-v1.2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.JessYanCoding/AndroidAutoSize/v1.2.1/cea79c1b21a1448dde2e603e61171abd22ef568a/AndroidAutoSize-v1.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
