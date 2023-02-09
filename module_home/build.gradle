@@ -57,5 +57,5 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar", '*.aar'])
     implementation project(':libs:lib_common')
 
-    annotationProcessor 'com.alibaba:arouter-compiler:1.5.2'
+    kapt 'com.alibaba:arouter-compiler:1.5.2'
 }
