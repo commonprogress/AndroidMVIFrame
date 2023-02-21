@@ -5,15 +5,13 @@ import com.base.commonality.base.viewmodel.IUiState
 import com.mvi.android.bean.RankBean
 import com.mvi.android.bean.WanBean
 
-data class MviState(val bannerUiState: BannerUiState, val detailUiState: DetailUiState?) : IUiState
 
-sealed class BannerUiState {
+sealed class BannerUiState:ISingleUiState {
     object INIT : BannerUiState()
     data class SUCCESS(val models: List<WanBean>) : BannerUiState()
 }
 
-data class MviSingleUiState(val message: String) : ISingleUiState
-sealed class DetailUiState {
+sealed class DetailUiState:ISingleUiState {
     object INIT : DetailUiState()
     data class SUCCESS(val detail: RankBean) : DetailUiState()
 }

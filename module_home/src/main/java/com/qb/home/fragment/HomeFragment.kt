@@ -18,7 +18,6 @@ import com.qb.home.databinding.FragmentHomeBinding
 import com.qb.home.mvimodel.HomeMviModel
 import com.qb.home.state.BannerUiState
 import com.qb.home.state.DetailUiState
-import com.qb.home.state.MviState
 
 
 @Route(path = RouteHomeUtils.Home_Fragment)
@@ -56,7 +55,7 @@ class HomeFragment : LazyBaseMviFragment<FragmentHomeBinding>() {
             }
         }
 
-        mViewModel.uiStateFlow.flowWithLifecycle2(this, prop1 = MviState::bannerUiState) { state ->
+        mViewModel.sUiStateFlow.flowWithLifecycle2(this) { state ->
             when (state) {
                 is BannerUiState.INIT -> {}
                 is BannerUiState.SUCCESS -> {
@@ -66,14 +65,6 @@ class HomeFragment : LazyBaseMviFragment<FragmentHomeBinding>() {
                     }
                     mBinding.tvShowUser.text = "显示Banner数据1：${Gson().toJson(imgs)}"
                 }
-            }
-        }
-
-        mViewModel.uiStateFlow.flowWithLifecycle2(
-            this, Lifecycle.State.STARTED,
-            prop1 = MviState::detailUiState
-        ) { state ->
-            when (state) {
                 is DetailUiState.INIT -> {}
                 is DetailUiState.SUCCESS -> {
                     val list = state.detail.datas

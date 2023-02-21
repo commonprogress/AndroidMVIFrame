@@ -28,16 +28,6 @@ class MainActivity : BaseMviActivity<ActivityMainBinding>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-//        mBinding.tvUser.clickDelay {
-//            mViewModel.loadBannerData()
-//        }
-//
-//        mBinding.tvUser1.clickDelay {
-//            mViewModel.loadDetailData()
-//        }
-//
-//        registerEvent()
-
         navFragment =
             supportFragmentManager.findFragmentById(R.id.fl_content)!!
         //fragment的重复加载问题和NavController有关
@@ -89,44 +79,7 @@ class MainActivity : BaseMviActivity<ActivityMainBinding>() {
 
 
     override fun registerEvent() {
-        /**
-         * Load加载事件 Loading、Error、ShowMainView
-         */
-//        mViewModel.loadUiStateFlow.flowWithLifecycle2(this) { state ->
-//            when (state) {
-//                is LoadUiState.Error -> mStatusViewUtil.showErrorView(state.msg)
-//                is LoadUiState.ShowMainView -> mStatusViewUtil.showMainView()
-//                is LoadUiState.Loading -> mStatusViewUtil.showLoadingView(state.isShow)
-//            }
-//        }
 
-//
-//        mViewModel.uiStateFlow.flowWithLifecycle2(this, prop1 = MviState::bannerUiState) { state ->
-//            when (state) {
-//                is BannerUiState.INIT -> {}
-//                is BannerUiState.SUCCESS -> {
-//                    val imgs = mutableListOf<String>()
-//                    for (model in state.models) {
-//                        imgs.add(model.imagePath)
-//                    }
-//                    mBinding.tvShowUser.text = "显示Banner数据：${Gson().toJson(imgs)}"
-//                }
-//            }
-//        }
-//
-//        mViewModel.uiStateFlow.flowWithLifecycle2(
-//            this, Lifecycle.State.STARTED,
-//            prop1 = MviState::detailUiState
-//        ) { state ->
-//            when (state) {
-//                is DetailUiState.INIT -> {}
-//                is DetailUiState.SUCCESS -> {
-//                    val list = state.detail.datas
-//                    mBinding.tvShowUser1.text = "显示Banner数据：${Gson().toJson(list)}"
-//                }
-//            }
-//
-//        }
     }
 
     private var clickTime: Long = 0

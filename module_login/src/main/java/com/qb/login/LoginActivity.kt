@@ -3,7 +3,6 @@ package com.qb.login
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.activity.viewModels
-import androidx.lifecycle.Lifecycle
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.base.commonality.base.viewmodel.LoadUiState
 import com.common.activity.BaseMviActivity
@@ -15,7 +14,6 @@ import com.qb.login.databinding.ActivityLoginBinding
 import com.qb.login.mvimodel.LoginMviModel
 import com.qb.login.state.BannerUiState
 import com.qb.login.state.DetailUiState
-import com.qb.login.state.MviState
 
 @Route(path = RouteLoginUtils.Login_LoginActivity)
 class LoginActivity : BaseMviActivity<ActivityLoginBinding>() {
@@ -49,7 +47,7 @@ class LoginActivity : BaseMviActivity<ActivityLoginBinding>() {
             }
         }
 
-        mViewModel.uiStateFlow.flowWithLifecycle2(this, prop1 = MviState::bannerUiState) { state ->
+        mViewModel.sUiStateFlow.flowWithLifecycle2(this) { state ->
             when (state) {
                 is BannerUiState.INIT -> {}
                 is BannerUiState.SUCCESS -> {
@@ -59,21 +57,12 @@ class LoginActivity : BaseMviActivity<ActivityLoginBinding>() {
                     }
                     mBinding.tvShowUser.text = "显示Banner数据：${Gson().toJson(imgs)}"
                 }
-            }
-        }
-
-        mViewModel.uiStateFlow.flowWithLifecycle2(
-            this, Lifecycle.State.STARTED,
-            prop1 = MviState::detailUiState
-        ) { state ->
-            when (state) {
                 is DetailUiState.INIT -> {}
                 is DetailUiState.SUCCESS -> {
                     val list = state.detail.datas
                     mBinding.tvShowUser1.text = "显示Banner数据：${Gson().toJson(list)}"
                 }
             }
-
         }
     }
 

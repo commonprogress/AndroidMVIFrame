@@ -19,7 +19,7 @@ abstract class BaseViewModel<UiState : IUiState, SingleUiState : ISingleUiState>
      * 可以重复消费的事件
      */
     private val _uiStateFlow = MutableStateFlow(initUiState())
-    val uiStateFlow: StateFlow<UiState> = _uiStateFlow
+    val uiStateFlow: StateFlow<UiState> = _uiStateFlow.asStateFlow() as StateFlow<UiState>
 
     /**
      * 一次性事件 且 一对一的订阅关系
@@ -34,15 +34,21 @@ abstract class BaseViewModel<UiState : IUiState, SingleUiState : ISingleUiState>
     private val _loadUiStateFlow: Channel<LoadUiState> = Channel()
     val loadUiStateFlow: Flow<LoadUiState> = _loadUiStateFlow.receiveAsFlow()
 
-    protected abstract fun initUiState(): UiState
-
-    protected fun sendUiState(copy: UiState.() -> UiState) {
-        _uiStateFlow.update { _uiStateFlow.value.copy() }
+    protected open fun initUiState(): UiState? {
+        if (uiStateFlow != null){
+            return _uiStateFlow.value
+        }
+        return null
     }
 
-    protected fun sendSingleUiState(sUiState: SingleUiState) {
+    protected fun sendUiState(copy: UiState.() -> UiState) {
+        _uiStateFlow.update { _uiStateFlow.value?.copy() }
+    }
+
+    protected fun sendSingleUiState(sUiState:()-> SingleUiState) {
+        val effectValue = sUiState()
         viewModelScope.launch {
-            _sUiStateFlow.send(sUiState)
+            _sUiStateFlow.send(effectValue)
         }
     }
 

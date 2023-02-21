@@ -2,12 +2,12 @@ package com.mvi.android.mvimodel
 
 import android.os.Bundle
 import com.base.commonality.base.viewmodel.BaseViewModel
+import com.base.commonality.base.viewmodel.ISingleUiState
+import com.base.commonality.base.viewmodel.IUiState
 import com.common.extend.toast
 import com.mvi.android.repo.MainRepo
 import com.mvi.android.state.BannerUiState
 import com.mvi.android.state.DetailUiState
-import com.mvi.android.state.MviSingleUiState
-import com.mvi.android.state.MviState
 
 /**
  * 类描述: 闪屏页配置信息
@@ -15,16 +15,16 @@ import com.mvi.android.state.MviState
  * 创建时间: 2021/7/22
  */
 class MainMviModel() :
-    BaseViewModel<MviState, MviSingleUiState>() {
+    BaseViewModel<IUiState, ISingleUiState>() {
     private val mMainRepo = MainRepo()
 
     fun initData(bundle: Bundle?) {
 
     }
 
-    override fun initUiState(): MviState {
-        return MviState(BannerUiState.INIT, DetailUiState.INIT)
-    }
+//    override fun initUiState(): MviState {
+//        return MviState(BannerUiState.INIT, DetailUiState.INIT)
+//    }
 
     /**
      * 获取banner信息
@@ -34,9 +34,7 @@ class MainMviModel() :
             showLoading = true,
             request = { mMainRepo.requestWanData("12345") },
             successCallback = { data ->
-                sendUiState {
-                    copy(bannerUiState = BannerUiState.SUCCESS(data))
-                }
+                sendSingleUiState { BannerUiState.SUCCESS(data) }
             },
             failCallback = {
                 it.toast()
@@ -50,8 +48,7 @@ class MainMviModel() :
             showLoading = false,
             request = { mMainRepo.requestRankData() },
             successCallback = { data ->
-                sendUiState {
-                    copy(detailUiState = DetailUiState.SUCCESS(data))
+                sendSingleUiState { DetailUiState.SUCCESS(data)
                 }
             },
         )
